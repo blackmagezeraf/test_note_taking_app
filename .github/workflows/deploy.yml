@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
 
+# Add this block
+permissions:
+  contents: read
+  packages: write   # This allows pushing to ghcr.io
+
 jobs:
   build:
     runs-on: ubuntu-latest
