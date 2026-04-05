@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM dhi.io/python:3-debian13-sfw-dev
 
 WORKDIR /app
 COPY requirements.txt .
